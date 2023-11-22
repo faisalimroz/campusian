@@ -1,0 +1,28 @@
+.media-button{
+    border: 0.5 solid  #3b5998 ;
+    height: 30px;
+    
+    width: auto;
+    padding: 5px;
+    border-radius: 20px;
+   
+  
+  }
+  .media-color{
+    height: 22px;
+    width: 20px;
+  }
+  #fb{
+    background-color:#3b5998 ;
+  }
+  #twitter{
+    background-color: #00aced;
+  }
+  #linkedin{
+    background-color: #007fb1;
+  }
+  .media-text{
+    color: white;
+    font-size: smaller;
+    
+  }

@@ -1,0 +1,21 @@
+.scholarship-card{
+  box-shadow:  2px 2px 7px 0.5px grey;
+  border-radius: 10px;
+  }
+  #scholarship-card{
+ 
+  }
+  #imgbb{
+    margin: 0px;
+   }
+   #scholarship-title{
+    text-align: justify;
+  }
+  #scholarship-description{
+
+      display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+  }

@@ -1,0 +1,41 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+   
+    
+    overflow: hidden;
+  
+    max-width: 450px;
+  }
+  .cards-content {
+    padding: 10px;
+   
+   
+  }
+  #card-color{
+    background-color:whitesmoke;
+  }
+  .cards-content p{
+    height: 82px;
+    overflow: visible;
+    text-align: left;
+   
+  }
+  .cards img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+   }
+   .company img{
+    position: absolute;
+    margin-left: 300px;
+    
+   
+   }
+   
+   
+   .company{
+     position: relative;
+   }
+   

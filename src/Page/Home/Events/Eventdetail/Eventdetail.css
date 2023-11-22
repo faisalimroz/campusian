@@ -1,0 +1,21 @@
+#event-card {
+    border-radius: 0px;
+    box-shadow:  3px 3px 7px 2px grey;
+  }
+  #imgbb{
+    margin: 0px;
+   }
+   
+  #event-title{
+    text-align: justify;
+  }
+  #event-content{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+  }
+  .date-color{
+    color: white;
+}

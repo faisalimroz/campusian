@@ -1,0 +1,13 @@
+#banner{
+    background-image: url('./unity\ \(2\).jpg');
+ 
+}
+.sriti{
+    z-index: 0;
+}
+/* @media screen and  (max-width: 960px){
+#banner{
+    width: 960px;
+}
+
+} */

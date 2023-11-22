@@ -1,0 +1,34 @@
+.event-details{
+    justify-content: space-between;
+    display: flex;
+}
+
+.event-img{
+    max-width: 100%;
+    height: auto;
+}
+.event-p{
+    font-size: 12px;
+    
+    text-align: justify;
+}
+.event{
+    margin-top: 80px;
+    width: 800px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+	
+   .event{
+    width: 400px;
+   }
+}
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 641px) and (max-width: 764px) {
+	
+    .event{
+        width: 600px;
+       }
+   
+}

@@ -1,0 +1,30 @@
+
+.news-img{
+    max-width: 100%;
+    height: auto;
+}
+.news-p{
+    font-size: 12px;
+    
+    text-align: justify;
+}
+.news{
+    margin-top: 80px;
+    
+    width: 800px;
+}
+@media screen and (min-width: 481px) and (max-width: 640px) {
+	
+   .news{
+    width: 400px;
+   }
+}
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 641px) and (max-width: 764px) {
+	
+    .news{
+        width: 600px;
+       }
+   
+}

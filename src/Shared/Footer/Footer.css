@@ -1,0 +1,11 @@
+#footer{
+    display: flex;
+    justify-content: space-around;
+}
+#copyright{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
