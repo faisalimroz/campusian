@@ -4,3 +4,24 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.search-field-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+#input-group {
+  max-width: 1000px; /* Adjust the maximum width as needed */
+}
+#search-info{
+  height: 50px;
+  width: 50px;
+}
+.input {
+  max-width: 200px; /* Adjust the maximum width as needed */
+}
+
+.form-control {
+  text-align: center; /* Center the content within the form-control div */
+}

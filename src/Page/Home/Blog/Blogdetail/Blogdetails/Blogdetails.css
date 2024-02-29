@@ -3,10 +3,17 @@
     max-width: 100%;
     height: auto;
 }
+.blog-titles {
+    font-size: 20px;
+}
 .blog-p{
-    font-size: 12px;
+    font-size: 15px;
     
     text-align: justify;
+}
+#blog-img{
+    height: 200px;
+    width: auto;
 }
 .blog{
     margin-top: 80px;

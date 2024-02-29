@@ -16,7 +16,7 @@ import Scholarship from "../../Page/Home/Scholarship/Scholarship";
 import ScholarshipDetails from '../../Page/Home/Scholarship/ScholarshipDetail/ScholarshipDetails/ScholarshipDetails'
 import ResearchPaper from "../../Page/Home/ResearchPaper/ResearchPaper";
 import Profile from "../../Layout/Profile";
-import Mycart from "../../Page/Profile/Mycart/Mycart";
+
 import Postblog from "../../Page/Profile/Postblog/Postblog";
 import Postjob from "../../Page/Profile/Postjob/Postjob";
 import Postevent from "../../Page/Profile/Postevent/Postevent";
@@ -24,6 +24,19 @@ import Postnews from "../../Page/Profile/Postnews/Postnews";
 import Postscholarship from "../../Page/Profile/Postscholarship/Postscholarship";
 import Postresearch from "../../Page/Profile/Postresearch/Postresearch";
 import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
+import AllUsers from "../../Page/Profile/AllUsers/AllUsers";
+import Aboutus from "../../Page/Aboutus/Aboutus";
+import MyPost from "../../Page/Profile/MyPost/MyPost";
+import Adminhome from "../../Page/Profile/Adminhome/Adminhome";
+import Myblog from "../../Page/Profile/Myblog/Myblog";
+import Alljobs from "../../Page/Profile/Alljobs/Alljobs";
+import Allnews from "../../Page/Profile/Allnews/Allnews";
+import Allresearch from "../../Page/Profile/Allresearch/Allresearch";
+import Allscholarship from "../../Page/Profile/Allscholarship/Allscholarship";
+import Allevents from "../../Page/Profile/Allevents/Allevents";
+
+
+
 
 
 
@@ -36,10 +49,7 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 path:'/',
                 element:<Home></Home>
             },
-            {
-                path:'/career',
-                element:<Career></Career>
-            },
+            
             {
                 path:'/research',
                 element:<ResearchPaper></ResearchPaper>
@@ -65,7 +75,7 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 element: <News></News>
             },
             {
-                path:'/news/:id',
+                path:'/news/:nid',
                 element: <NewsDetails></NewsDetails>
             },
             {
@@ -77,7 +87,7 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 element: <Event></Event>
             },
             {
-                path:'/event/:id',
+                path:'/event/:eid',
                 element: <Eventdetails></Eventdetails>
             },
             {
@@ -85,7 +95,7 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 element: <Career></Career>
             },
             {
-                path:'/career/:id',
+                path:'/career/:cid',
                 element: <CareerDetails></CareerDetails>
             },
             {
@@ -93,7 +103,7 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 element: <Scholarship></Scholarship>
             },
             {
-                path:'/scholarship/:id',
+                path:'/scholarship/:sid',
                 element: <ScholarshipDetails></ScholarshipDetails>
             },
             {
@@ -104,6 +114,12 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 path:'/signup',
                 element: <Signup></Signup>
             },
+            {
+                path:'/aboutus',
+                element: <Aboutus></Aboutus>
+            },
+           
+           
           
         ]
     },
@@ -112,8 +128,8 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
         element: <Profile></Profile>,
         children: [
             {
-                path:'mycart',
-                element:<Mycart></Mycart>
+                path:'mypost',
+                element:<MyPost></MyPost>
             },
             {
                 path:'postblog',
@@ -140,9 +156,42 @@ import Updateprofile from "../../Page/Profile/Updateprofile/Updateprofile";
                 element:<Postscholarship></Postscholarship>
             },
             {
+                path:'allblog',
+                element:<Myblog></Myblog>
+            },
+            {
+                path:'alljobs',
+                element:<Alljobs></Alljobs>
+            },
+            {
+                path:'allnews',
+                element:<Allnews></Allnews>
+            },
+            {
+                path:'allresearch',
+                element:<Allresearch></Allresearch>
+            },
+            {
+                path:'allevents',
+                element:<Allevents></Allevents>
+            },
+            {
+                path:'allscholarship',
+                element:<Allscholarship></Allscholarship>
+            },
+            {
                 path:'updateprofile',
                 element:<Updateprofile></Updateprofile>
+            },
+            {
+                path:'adminhome',
+                element:<Adminhome></Adminhome>
+            },
+            {
+                path:'alluser',
+                element:<AllUsers></AllUsers>
             }
+
         
         ]
     }

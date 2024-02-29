@@ -1,0 +1,44 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Adjust the column template as needed */
+    height: 40vh; /* Set the height of the grid container to fill the viewport */
+  }
+  
+  .cardd {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust the column template for the card */
+   padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    padding: 20px; /* Adjust as needed */
+  }
+  
+  #img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #imgg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 p{
+    margin-top: 0;
+    font-family: sans-serif;
+  }
+
+  
+  @media (max-width: 600px) {
+    .cardd {
+      grid-template-columns: 1fr; /* Adjust the column template for smaller screens */
+    }
+  }

@@ -2,12 +2,12 @@ import React from 'react';
 import './CareerDetail.css'
 import { Link } from 'react-router-dom';
 const CareerDetail = ({job}) => {
-    const {img,title,company,salary,location,experience,id,date,qualification}=job;
+    const {img,title,company,salary,location,experience,_id,date,qualification}=job;
     return (
         <div className='mt-2 '>
-            <Link to={`/career/${id}`}>
+            <Link to={`/career/${_id}`}>
         
-            <div id='card-color' className="card w-[450px] h-auto bg-base-300 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover:bg-gray-200 duration-300 ml-4 mt-4">
+            <div id='card-color' className="card w-[450px] h-auto bg-base-800 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 hover:bg-gray-200 duration-300 ml-4 mt-4">
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <div className='card-title company'>
@@ -38,9 +38,9 @@ const CareerDetail = ({job}) => {
           </div>
           <div class="cards">
             <img className='h-8 w-8 ' src="https://i.ibb.co/LpG2pmh/image.png " alt="salary" />
-            <div class="cards-content h-auto " >
+            <div class="cards-content h-auto "  >
 
-              <p>{qualification} </p>
+              <p id='qual'>{qualification} </p>
             </div>
           </div>
           <div class="cards">

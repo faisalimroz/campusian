@@ -1,5 +1,36 @@
-.signin-border{
+/* Add this CSS to your existing styles or create a new stylesheet */
+.signup-container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom:130px
+  }
+  
+  .signin-border {
     border: 1px solid black;
-    padding:30px 100px;
+    padding: 30px;
     border-radius: 10px;
-}
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-bottom: 2px;
+  }
+  
+  .input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .btn {
+    width: 800%;
+    max-width: 200px;
+  }
+  
+  /* Adjust margin-top for better spacing */
+  .btn-google {
+    margin-top: 20px;
+  }
+  

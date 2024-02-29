@@ -2,9 +2,13 @@
 .news-img{
     max-width: 100%;
     height: auto;
+
 }
+
+
+
 .news-p{
-    font-size: 12px;
+    font-size: 14px;
     
     text-align: justify;
 }

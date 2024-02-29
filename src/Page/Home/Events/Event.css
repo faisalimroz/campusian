@@ -1,0 +1,21 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.pagination button {
+    /* Add your button styling here */
+    margin: 0 0px; /* Adjust the margin between buttons as needed */
+}
+#input-group {
+    max-width: 1000px; /* Adjust the maximum width as needed */
+  }
+  #search-info{
+    height: 50px;
+    width: 50px;
+  }
+.pagination button.active {
+    /* Add your styling for the active button here */
+}

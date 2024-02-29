@@ -3,7 +3,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div>
-            <footer id='footer' className="footer p-10 bg-base-200 text-base-content  ">
+            <footer id='footer' className="footer p-10 bg-yellow-300 text-base-content mt-[0px] ">
 
                 <div>
                     <span className="footer-title">Company</span>
@@ -29,10 +29,10 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <footer id='copyright' className="footer text-center px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+            <footer id='copyright' className="footer text-center px-10 py-4 border-t bg-yellow-300 text-base-content border-base-300 bottom-0">
                 <div className=" ">
                  
-                    <p className=''>Copyright 2023 TravelBug | Design By Faisal </p>
+                    <p className=''>Copyright 2024 Campusian | Design By Faisal </p>
                 </div>
 
             </footer>

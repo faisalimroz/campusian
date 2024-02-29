@@ -1,9 +1,10 @@
 [
-    {"id":1,"title": "Research on Heart Disease","img":"https://i.ibb.co/QCw4cmh/image.png","link":"https://www.bmj.com/content/311/6998/171.short"},
-    {"id":2,"title": "Research on Heart Disease","img":"https://i.ibb.co/QCw4cmh/image.png","link":"https://www.bmj.com/content/311/6998/171.short"},
-    {"id":3,"title": "Research on Heart Disease","img":"https://i.ibb.co/QCw4cmh/image.png","link":"https://www.bmj.com/content/311/6998/171.short"},
-    {"id":4,"title": "Research on Heart Disease","img":"https://i.ibb.co/QCw4cmh/image.png","link":"https://www.bmj.com/content/311/6998/171.short"},
-    {"id":5,"title": "Research on Heart Disease","img":"https://i.ibb.co/QCw4cmh/image.png","link":"https://www.bmj.com/content/311/6998/171.short"},
-    {"id":6,"title": "Research on Heart Disease Research on Heart Disease Research on Heart Disease","img":"https://i.ibb.co/QCw4cmh/image.png","link":"https://www.bmj.com/content/311/6998/171.short"}
+    {"title": "mRNA vaccine-induced antibodies more effective than natural immunity in neutralizing SARS-CoV-2 and its high affinity variants","img":"https://i.ibb.co/CBtfH9F/image.png","link":"https://www.nature.com/articles/s41598-022-06629-2","date":"2022-11-05","postedby":"Faruk"},
+    {"title": "The impact of digital media on children’s intelligence while controlling for genetic differences in cognition and socioeconomic background","img":"https://i.ibb.co/gDk0T68/image.png","link":"https://www.nature.com/articles/s41598-022-11341-2","date":"2023-05-12","postedby":"Faisal"},
+  {"title": "Reading on a smartphone affects sigh generation, brain activity, and comprehension","img":"https://i.ibb.co/826L7Pr/image.png":"https://www.nature.com/articles/s41598-022-05605-0","date":"2022-31-01","postedby":"Limon"},
+  {"title": "Birdsongs alleviate anxiety and paranoia in healthy participants","img":"https://i.ibb.co/nDQPbdc/image.png","link":"https://www.nature.com/articles/s41598-022-20841-0","date":"2022-13-10","postedby":"Rahin"},
+  {"title": "Chemical characterisation of the vapour emitted by an e-cigarette using a ceramic wick-based technology","img":"https://i.ibb.co/hMpnmhz/image.png","link":"https://www.nature.com/articles/s41598-022-19761-w","date":"2023-22-10","postedby":"Sriti"},
+    
+   {"title": "Abdominal pain patterns during COVID-19: an observational study","img":"https://i.ibb.co/Bcg5Tcy/image.png","link":"https://www.nature.com/articles/s41598-022-18753-0","date":"2022-29-08","postedby":"Fahim"}
     
 ]

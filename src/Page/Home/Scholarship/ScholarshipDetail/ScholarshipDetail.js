@@ -2,13 +2,13 @@ import React from 'react';
 import './ScholarshipDetail.css'
 import { Link } from 'react-router-dom';
 const ScholarshipDetail = ({ scholarship }) => {
-    const { img, title, description, id, date, universityname, Scholarshipname } = scholarship;
+    const { img, title, description, _id, date, universityname, Scholarshipname } = scholarship;
     return (
         <div>
-            <Link to={`/scholarship/${id}`}>
+            <Link to={`/scholarship/${_id}`}>
 
                 <div>
-                    <div  id='scholarship-card ' className="scholarship-card card card-compact w-96 bg-base-100 shadow-xl mt-5 ml-4 mb-5">
+                    <div  id='scholarship-card' className="scholarship-card card card-compact w-96 bg-base-100 shadow-xl mt-5 ml-4 mb-5">
                         <figure><img id="imgbb" className='imgbb w-96' src={img} alt="Shoes" /></figure>
                         <div className="card-body ">
                             <h2 id='scholarship-title' className="card-title  blog-title">{title}

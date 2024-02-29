@@ -11,6 +11,7 @@ const Blogdetails = () => {
   // ...
 
 useEffect(() => {
+  console.log('idd',bid)
   fetch(`http://localhost:5000/blog/${bid}`)
     .then(response => {
       if (!response.ok) {
@@ -19,6 +20,7 @@ useEffect(() => {
       return response.json();
     })
     .then(data => {
+      console.log('big',data)
       setBlogPost(data);
     })
     .catch(error => {
@@ -36,10 +38,10 @@ useEffect(() => {
         <div id='' className="blog  mx-auto ">
           <div className="blog-div">
             <figure>
-              <img className='blog-img' src={blogPost.img} alt="Shoes" />
+              <img id='blog-img' className='blog-img' src={blogPost.img} alt="Shoes" />
             </figure>
-            <h2 className="blog-title font-bold">{blogPost.title}</h2>
-            <p className='blog-p'>{blogPost.description}</p>
+            <h2 className="blog-titles font-bold">{blogPost.title}</h2>
+            <p className='blog-p '>{blogPost.description}</p>
           </div>
           <div className='mt-2'>
             <Socialmedia></Socialmedia>

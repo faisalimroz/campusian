@@ -1,41 +1,55 @@
 import React, { useEffect, useState } from 'react';
-import './Eventdetails.css'
 import { useParams } from 'react-router-dom';
+import './Eventdetails.css';
+
 const Eventdetails = () => {
-    const { id } = useParams();
+  const { eid } = useParams();
+  console.log(eid);
 
-    const [eventPost, setEventPost] = useState();
-    useEffect(() => {
-        fetch('events.json')
-            .then(res => res.json())
-            .then(data => {
-                const post = data.find(post => post.id === id);
-                setEventPost(post);
-                console.log(eventPost.title);
-            })
-    }, [])
-    return (
-        <div>
-            <div id='' className="event  mx-auto ">
+  const [eventPost, setEventPost] = useState(null);
 
-                <div className="event-div">
-                    <figure><img className='event-img' src="https://i.ibb.co/t3t13vn/image.png" alt="Shoes" /></figure>
-                    <div className='event-details'>
-                        <h1>Venue: Central Field</h1>
-                        <h1> Event Date: 2023-05-12</h1>
-                        <h1> Event Time: 9:30 PM</h1>
-                    </div>
+  useEffect(() => {
+    console.log('idddd', eid);
+    fetch(`http://localhost:5000/event/${eid}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch event details');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('event', data);
+        setEventPost(data);
+      })
+      .catch(error => {
+        console.log(error);
+        // Handle the error, such as showing an error message
+      });
+  }, [eid]);
 
-                    <h2 className="event-title">Futurenation-DIU Job Utsob 2022</h2>
-                    <p className='event-p'>DIU organized Futurenation Job Utsob 2022 . DIU organized Futurenation Job Utsob 2022</p>
-                
-
-
-
-                </div>
+  return (
+    <div className="event-details-container mt-2 ">
+      {eventPost && eventPost.title ? (
+        <div className="event-details ">
+          <div className="event-div mx-auto">
+            <figure>
+              <img className="event-img" src={eventPost.img} alt="Event" />
+            </figure>
+            <div className="event-details ">
+              <h1>Venue: {eventPost.location}</h1>
+              <h1>Event Date: {eventPost.date}</h1>
+              <h1>Event Time: {eventPost.time}</h1>
             </div>
+
+            <h2 className="text-xl">{eventPost.title}</h2>
+            <p className="event-p ">{eventPost.description}</p>
+          </div>
         </div>
-    );
+      ) : (
+        <div>Loading...</div>
+      )}
+    </div>
+  );
 };
 
 export default Eventdetails;

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'
+import './Navbar.css';
 import { AuthContext } from '../../contexts/AuthProvider';
 const Navbar = () => {
 
@@ -65,15 +65,16 @@ const Navbar = () => {
                                 <li><Link to='/scholarship'>Scholarship</Link></li>
 
 
-                                <li><Link>About us</Link></li>
+                                <li><Link to='/aboutus'>About us</Link></li>
                                 {
                                     user?.uid ? (
                                         <div className="dropdown dropdown-end  mt-2">
-                                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                                <div className="w-10 rounded-full">
-                                                    <img src={user.photoURL} alt='ddd' />
+                                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar" style={{ width: '100%', height: '34px', borderRadius: '40%'}}>
+                                                <div className="w-10">
+                                                    <img src={user.photoURL} alt='ddd' style={{ width: '100%', height: '100%', objectFit: 'cover',borderRadius: '50%' }} />
                                                 </div>
                                             </label>
+
                                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                                 <li><Link to='/profile'>Profile</Link></li>
 
@@ -85,6 +86,7 @@ const Navbar = () => {
                                         <li><Link to='/login'>Login</Link></li>
                                     )
                                 }
+
                             </ul>
 
 
@@ -141,13 +143,13 @@ const Navbar = () => {
 
 
 
-                        <li><Link>About us</Link></li>
+                        <li><Link to='/aboutus'>About us</Link></li>
                         {
                             user?.uid ?
-                                <div className="dropdown dropdown-right  ss ml-3 w-16">
+                                <div className="dropdown dropdown-right   ml-3 w-16">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src={user.photoURL} alt='ddd' />
+                                            <img className='rounded-full' src={user.photoURL} alt='ddd' />
                                         </div>
                                     </label>
                                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">

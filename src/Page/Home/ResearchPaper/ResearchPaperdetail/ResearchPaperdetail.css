@@ -1,7 +1,9 @@
 
 #research-title{
-    text-align: justify;
-    height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   }
   .carding {
     position: relative;
@@ -17,6 +19,7 @@
   }
   #imgbb{
     margin: 0px;
+    max-height: 200px;
    }
    #research-card {
     border-radius: 0px;

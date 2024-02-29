@@ -1,0 +1,36 @@
+.detail{
+    text-align: justify;
+}
+/* Add these styles to your History.css file */
+
+#heros {
+    display: flex;
+    max-height: 500px; /* Set the max height as needed */
+    background-color: #FFEEC9; /* Set the background color */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#heros-content {
+    flex: 1;
+    padding: 20px;
+}
+
+#heros img {
+    max-width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Add these styles to your existing classes in History.js */
+
+/* ... existing styles ... */
+
+#heros-content {
+    text-align: left; /* Align text to the left */
+}
+
+.detail {
+    /* Add any additional styles for the content side */
+}
+
+/* ... existing styles ... */

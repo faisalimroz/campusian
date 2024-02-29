@@ -4,3 +4,10 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+#input-group {
+  max-width: 1000px; /* Adjust the maximum width as needed */
+}
+#search-info{
+  height: 50px;
+  width: 50px;
+}

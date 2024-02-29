@@ -1,16 +1,18 @@
 import React, { useContext, useEffect, useState } from 'react';
-import './Postblog.css'; // Import the CSS file
+import './Postblog.css'; 
 import axios from 'axios';
 import { AuthContext } from '../../../contexts/AuthProvider';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Swal from 'sweetalert2';
 const img_hosting_token = '6fb68cbd4232c1e20fa193c68ca16ae7';
 
 const Postblog = () => {
     const [title, setTitle] = useState('');
     const img_hosting_url = `https://api.imgbb.com/1/upload?expiration=600&key=${img_hosting_token}`;
     const { user } = useContext(AuthContext);
+    const postedby=user.displayName;
+    console.log(postedby)
     const [description, setDescription] = useState('');
     const [date, setDate] = useState('');
     const [img, setImage] = useState(null); // Initialize with null
@@ -64,16 +66,22 @@ const Postblog = () => {
                     date,
                     img: imgResponseData.data.display_url,
                     email,
+                    postedby
                 });
 
                 // Show a toast notification when the post is published
                 setToastMessage('Post Published');
                 setPostPublished(true);
-
+               
                 // Reset the form fields
                 setTitle('');
                 setDescription('');
                 setImage(null);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Blog Published',
+                    text: 'Your blog post has been published successfully!',
+                });
             } else {
                 console.error('Error uploading image:', imgResponseData.error);
             }
@@ -83,8 +91,8 @@ const Postblog = () => {
     };
 
     return (
-        <div className="postblog-container">
-            <div className='bg-gray-200 postblog'>
+        <div className="postblog-container  bg-yellow-300">
+            <div className=' bg-yellow-300 postblog'>
                 <h1>Add a Blog Post</h1>
                 <form onSubmit={handleSubmit}>
                     <div className='form-group'>
@@ -93,7 +101,7 @@ const Postblog = () => {
                     </div>
                     <div className='form-group'>
                         <label>Description:</label>
-                        <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
+                        <textarea className='h-[150px]' value={description} onChange={(e) => setDescription(e.target.value)} />
                     </div>
                     <div className='form-group'>
                         <label>Image:</label>
@@ -106,8 +114,8 @@ const Postblog = () => {
                             </div>
                         )}
                     </div>
-                    <div className='form-group'>
-                        <button type='submit'>Submit</button>
+                    <div className='form-group' >
+                        <button  id='blog-btn' type='submit'>Submit</button>
                     </div>
                 </form>
 

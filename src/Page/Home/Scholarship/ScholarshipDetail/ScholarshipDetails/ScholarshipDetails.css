@@ -3,7 +3,12 @@
     margin-top: 8px;
 }
 .scholarship-img{
-   width: 100%;
-   height: auto;
+   width: 80%;
+   max-height: 400px;
  
+}
+.scholarship-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
